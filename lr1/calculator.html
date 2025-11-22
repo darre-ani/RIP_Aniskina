@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+
+
+<style>
+  body {
+    background: url(zakat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+
+<body class="center-flex">
+  <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+  <label for="theme-toggle" class="theme-label">
+    <span class="theme-icon">Dark</span>
+  </label>
+
+  <div> 
+    <div>
+      <details style="color: rgb(230, 0, 255);">
+      <summary>Автор</summary>
+      Анискина Дарья Александровна ИБМ3-54Б
+      </details>
+
+      <p style="color: rgb(73, 73, 73);"> Цель данной лабораторной работы - <mark>знакомство</mark> с инструментами построения 
+      пользовательских интерфейсов web-сайтов: <mark>HTML, CSS</mark>. 
+      В ходе выполнения работы, вам предстоит ознакомиться с кодом реализации 
+      простого калькулятора, и затем выполнить задания по варианту.</p>
+    </div>
+
+    <div id="result" class="result">
+      0
+    </div>
+
+    <div class = "buttons-container">
+      <div class="row">  
+        <button id="btn_op_clear" class="my-btn secondary">C</button>
+        <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+        <button id="btn_op_percent" class="my-btn secondary">%</button>
+        <button id="btn_op_div" class="my-btn primary">/</button>
+      </div>
+      
+      <div class="row">
+        <button id="btn_digit_7" class="my-btn">7</button>
+        <button id="btn_digit_8" class="my-btn">8</button>
+        <button id="btn_digit_9" class="my-btn">9</button>
+        <button id="btn_op_mult" class="my-btn primary">x</button>
+      </div>
+
+      <div class="row">
+        <button id="btn_digit_4" class="my-btn">4</button>
+        <button id="btn_digit_5" class="my-btn">5</button>
+        <button id="btn_digit_6" class="my-btn">6</button>
+        <button id="btn_op_minus" class="my-btn primary">-</button>
+      </div>
+
+      <div class="row">
+        <button id="btn_digit_1" class="my-btn">1</button>
+        <button id="btn_digit_2" class="my-btn">2</button>
+        <button id="btn_digit_3" class="my-btn">3</button>
+        <button id="btn_op_plus" class="my-btn primary">+</button>
+      </div>
+
+      <div class="row">
+        <button id="btn_digit_0" class="my-btn">0</button>
+        <button id="btn_digit_dot" class="my-btn">.</button>
+        <button id="btn_op_equal" class="my-btn primary execute">=</button>
+      </div>
+
+    </div>
+    <h2 style="color: var(--author-text);">ЛР выполнена Анискиной Дарьей Александровной</h2>
+    <a href = "https://github.com/iu5git/JavaScript/blob/main/tutorials/lab1/README.md" class="btn_link" >Переход 
+      на GitHub</a>
+  <form>
+  <label for="seeingacat" style="color: rgb(230, 0, 255);">Есть ли на картинке кот</label>
+  <select id = "seeingacat" name="seeing-user">
+    <option disabled value="" selected>Выбрать ответ</option>
+    <option value="yes">Да, вот он сидит</option>
+    <option value="no">Нет, я вижу калькулятор</option>
+  </select>
+  </form>
+
+  </div>
+</body>
+</html>
